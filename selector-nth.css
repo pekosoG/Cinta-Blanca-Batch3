@@ -1,0 +1,20 @@
+body{
+    margin:0px;
+    background-color: black;
+}
+div{
+    width: 55px;
+    height: 50px;
+    margin:5px;
+    display: inline-block;
+    transition: all 500ms ease;
+}
+div:hover:nth-child(odd){
+    background-color: rgb(174, 174, 174);
+}
+div:hover:nth-child(even){
+    background-color: rgb(228, 221, 122);
+}
+div:nth-child(2){
+    background-color: rgb(174, 174, 174);
+}
