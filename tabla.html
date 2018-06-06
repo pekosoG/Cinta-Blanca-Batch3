@@ -1,0 +1,66 @@
+<!-- 
+    Hacer una pagina HTML con una tabla
+    como la que está pintada a la izquierda
+    del proyector
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabla</title>
+</head>
+<body>
+    <style>
+        th{
+            background-color: blue;
+            color:white;
+        }
+        table, th, td{
+            border: 1px solid gray;
+        }
+
+    </style>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4"><h2>Venta</h2></th>
+            </tr>
+            <tr>
+                <th>Cant</th>
+                <th>Descrip</th>
+                <th>Precio</th>
+                <th>total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>3</td>
+                <td>Lentes</td>
+                <td>10</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Libros</td>
+                <td>5</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Plumas</td>
+                <td>1</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Este es mi inventario</h2>
+    <ul>
+        <li>Lentes $10</li>
+        <li>Plumas $1</li>
+        <li>Libros $10</li>
+    </ul>
+</body>
+</html>
