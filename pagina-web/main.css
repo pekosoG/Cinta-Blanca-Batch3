@@ -1,6 +1,7 @@
 body{
     background-color: darkolivegreen;
     margin:0px;
+    font-family: 'Roboto', sans-serif;
 }
 
 nav{
@@ -36,6 +37,48 @@ i:hover{
     color:white;
 }
 
+.articulo{
+    width: 90vw;
+    text-align: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+#logo-small{
+    display: none;
+}
+
+.contenedor-headers{
+    
+}
+
+.articulo h1, .articulo h2{
+    margin: 0px;
+}
+
+.articulo h1{
+    color:rgb(0, 255, 0);
+    font-size: 100px;
+}
+
+.articulo h2{
+    color:white;
+    font-size: 70px;
+    letter-spacing: 15px;
+}
+
+.articulo div.naranja{
+    padding: 40px;
+    background-color: rgb(255, 132, 0);
+    color:white;
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+
+
 /*
     Breakpoint de Tableta
 */
@@ -49,5 +92,46 @@ i:hover{
 @media screen and (max-width:480px){
     #logo{
         display: none;
+    }
+    #logo-small{
+        display: inline-block;
+        width: 65px;
+        margin-top: 12px;
+    }
+    .articulo{
+        padding: 5vw;
+        width: 90vw;
+    }
+    .articulo h1, .articulo h2{
+        display: inline-block;
+    }
+    .articulo h1{
+        font-size: 40px;
+    }
+    .articulo h2{
+        font-size: 30px;
+        margin-top: -30px;
+        letter-spacing: 6px;
+    }
+    div.contenedor-imagen{
+        
+        height: 17vw;
+        width: 17vw;
+        float:left;
+    }
+    div.contenedor-headers{
+        height: 17vw;
+        width: 70vw;
+        margin:0px;
+        float:left;
+        margin-left: 6px;
+    }
+    div.contenedor-imagen img{
+        vertical-align: middle;
+    }
+
+    .articulo div.naranja{
+        width: -webkit-fill-available;
+        display: inline-block;
     }
 }
