@@ -1,11 +1,10 @@
 body{
-    background-color: darkolivegreen;
     margin:0px;
     font-family: 'Roboto', sans-serif;
 }
 
 nav{
-    background-color: white;
+    background-color: darkolivegreen;
     height: 80px;
     border-bottom: 4px solid darkgrey;
 }
@@ -21,7 +20,7 @@ nav div{
 }
 
 i{
-    color: gray;
+    color: rgb(255, 255, 255);
     font-size: 40px;
     vertical-align: top;
     padding-top: 20px;
@@ -30,26 +29,30 @@ i{
 }
 
 nav div:hover{
-    background-color: darkolivegreen;
+    background-color: rgb(152, 191, 85);
 }
 
 i:hover{
-    color:white;
+    color:rgb(124, 124, 124);
 }
 
 .articulo{
     width: 90vw;
     text-align: center;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding:5vw;
+    background-size: cover;
+}
+
+.fondo_1{
+    background-image: url('img/fondo_jeep.jpg');
+}
+
+.fondo_2{
+    background-image: url('img/jeep_fondo_2.jpg');
 }
 
 #logo-small{
     display: none;
-}
-
-.contenedor-headers{
-    
 }
 
 .articulo h1, .articulo h2{
@@ -57,7 +60,7 @@ i:hover{
 }
 
 .articulo h1{
-    color:rgb(0, 255, 0);
+    color:rgb(0, 116, 0);
     font-size: 100px;
 }
 
@@ -69,12 +72,19 @@ i:hover{
 
 .articulo div.naranja{
     padding: 40px;
-    background-color: rgb(255, 132, 0);
+    background-color: rgba(255, 132, 0,.5);
     color:white;
     width: 75vw;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+}
+
+.articulo-blanco{
+    text-align: center;
+    background-color: white;
+    padding:2%;
+    color:gray;
 }
 
 
@@ -133,5 +143,9 @@ i:hover{
     .articulo div.naranja{
         width: -webkit-fill-available;
         display: inline-block;
+    }
+
+    .articulo-blanco p{
+        display: none;
     }
 }
